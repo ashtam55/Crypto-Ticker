@@ -2,6 +2,19 @@
 
 A handheld device which is use for monitoring cryptocurrencies prices in realtime. It is based on ESP32 board and the API used for getting live accurate data is by CoinGecko. ESP32 is attach with MAX2719 dot matrix display for showing prices. Using the ESP32 freeRTOS task, Updating the dot matrix, fetching data from CoinGecko, and other internal tasks are running simultaneously. 
 
+## Wiring
+
+For connecting ESP32 with dot matrix use the below pins for connections.
+| ESP32 Pins | MAX7219 Pins |
+| --- | --- | 
+| Vin | Vcc |
+| GND | GND |
+| 14 | CLK | 
+| 15 | CS |
+| 23 | Din |
+
+Please ensure the pins before powering the device.
+
 ## Steps for Configuring the device
 
 * Plug the device to 5v power supply via mobile adapter or any other port which outputs 5v power. Current usage is more than 600 mA.
